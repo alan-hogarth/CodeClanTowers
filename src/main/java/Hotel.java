@@ -12,5 +12,4 @@ public class Hotel {
         this.conferenceRooms = conferenceRooms;
     }
 
-
 }
