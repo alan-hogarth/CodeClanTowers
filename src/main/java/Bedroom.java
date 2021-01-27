@@ -30,12 +30,8 @@ public class Bedroom {
         this.capacity = capacity;
     }
 
-    public ArrayList<Guest> getGuests() {
-        return guests;
-    }
-
-    public void setGuests(ArrayList<Guest> guests) {
-        this.guests = guests;
+    public int getGuests() {
+        return this.guests.size();
     }
 
     public String getRoomType() {
@@ -44,5 +40,9 @@ public class Bedroom {
 
     public void setRoomType(String roomType) {
         this.roomType = roomType;
+    }
+
+    public void addGuest(Guest cow) {
+        guests.add(cow);
     }
 }
