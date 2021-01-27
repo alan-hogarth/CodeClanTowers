@@ -12,8 +12,7 @@ public class Hotel {
         this.conferenceRooms = new ArrayList<>();
     }
 
-<<<<<<< HEAD
-=======
+
     public String getName() {
         return name;
     }
@@ -41,5 +40,10 @@ public class Hotel {
             conferenceRoom.addGuest(cow);
         }
     }
->>>>>>> e3b18b4045efe21225e752f6928aba9567725db2
+
+
+    public Booking bookRoom(Bedroom bedroom, int nights) {
+        return new Booking(nights, bedroom);
+
+    }
 }

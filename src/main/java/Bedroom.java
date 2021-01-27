@@ -6,12 +6,15 @@ public class Bedroom {
     private int capacity;
     private ArrayList<Guest> guests;
     private String roomType;
+    private int rate;
 
-    public Bedroom(int roomNumber, int capacity, String roomType) {
+    public Bedroom(int roomNumber, int capacity, String roomType, int rate) {
         this.roomNumber = roomNumber;
         this.capacity = capacity;
         this.guests = new ArrayList<>();
         this.roomType = roomType;
+        this.rate = rate;
+
     }
 
     public int getRoomNumber() {
@@ -44,5 +47,9 @@ public class Bedroom {
 
     public void addGuest(Guest cow) {
         guests.add(cow);
+    }
+
+    public int getRate(){
+        return this.rate;
     }
 }
