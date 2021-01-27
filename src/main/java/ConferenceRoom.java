@@ -28,11 +28,15 @@ public class ConferenceRoom {
         this.cowpacity = cowpacity;
     }
 
-    public ArrayList<Guest> getGuests() {
-        return guests;
+    public int getGuests() {
+        return guests.size();
     }
 
     public void setGuests(ArrayList<Guest> guests) {
         this.guests = guests;
+    }
+
+    public void addGuest(Guest cow) {
+        this.guests.add(cow);
     }
 }
